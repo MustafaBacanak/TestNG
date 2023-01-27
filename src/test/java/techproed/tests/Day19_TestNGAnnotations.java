@@ -1,5 +1,6 @@
 package techproed.tests;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.*;
 
 public class Day19_TestNGAnnotations {
@@ -30,6 +31,8 @@ public class Day19_TestNGAnnotations {
     public void beforeGroups() {
         System.out.println("Before Groups");
     }
+
+
 
     @BeforeClass  // Static olacak dikkat et !!!
     public static void beforeClass() {
