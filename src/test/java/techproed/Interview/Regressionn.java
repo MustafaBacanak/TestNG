@@ -1,4 +1,4 @@
-package Interview;
+package techproed.Interview;
 
 public class Regressionn {
 

@@ -15,10 +15,10 @@ public class Day21_TestCenter {
 
     @Test
     public void setTestCenterTest() {
-        Driver.getDriver().get(ConfigReader.getProperty("testcenter_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("techpro_test_url"));
 
-        testCenterLoginPage.username.sendKeys(ConfigReader.getProperty("testcenter_id"));
-        testCenterLoginPage.password.sendKeys(ConfigReader.getProperty("testcenter_password"));
+        testCenterLoginPage.username.sendKeys(ConfigReader.getProperty("techpro_test_username"));
+        testCenterLoginPage.password.sendKeys(ConfigReader.getProperty("techpro_test_password"));
         testCenterLoginPage.loginBtn.click();
 
         Assert.assertTrue(testCenterSecurePage.logOutBtn.isDisplayed());

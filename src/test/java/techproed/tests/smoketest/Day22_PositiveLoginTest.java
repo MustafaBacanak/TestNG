@@ -32,7 +32,7 @@ public class Day22_PositiveLoginTest {
         blueRentalLoginPage = new BlueRentalLoginPage();
     blueRentalHomePage.loginLink.click();
     blueRentalLoginPage.emailBox.sendKeys(ConfigReader.getProperty("admin_email"));
-    blueRentalLoginPage.passwordBox.sendKeys(ConfigReader.getProperty("admin_password"));
+    blueRentalLoginPage.passwordBox.sendKeys(ConfigReader.getProperty("admin_sifre"));
     blueRentalLoginPage.loginButton.click();
         Assert.assertTrue(blueRentalHomePage.userID.isDisplayed());
     Driver.closeDriver();

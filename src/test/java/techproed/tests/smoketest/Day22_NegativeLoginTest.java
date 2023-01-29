@@ -35,8 +35,8 @@ public class Day22_NegativeLoginTest {
 
         blueRentalHomePage.loginLink.click();
 
-        blueRentalLoginPage.emailBox.sendKeys(ConfigReader.getProperty("customer_email"));
-        blueRentalLoginPage.passwordBox.sendKeys(ConfigReader.getProperty("customer_password"));
+        blueRentalLoginPage.emailBox.sendKeys(ConfigReader.getProperty("fake_email"));
+        blueRentalLoginPage.passwordBox.sendKeys(ConfigReader.getProperty("fake_pass"));
 
         blueRentalLoginPage.loginButton.click();
         Thread.sleep(2000);

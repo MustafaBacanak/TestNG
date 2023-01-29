@@ -18,10 +18,10 @@ public class Day20_DependsOnMethods {
 }
 
 /*
-TestNG de tum  @Test metotlar bitbirlerinden bagimsiz olarak calisirlat
-Eger methodlari bagimli hale getirmek istersem, dependsOnMethods parametresi kullanilir
-Burdaki ornekde, searchTest methodu homeTest methoduna bagimlidir
-searchTest den once homeTest calisir
-Eger homeTest basarili ise searchTest calisir.
-Eget homeTest basarisiz ise, searchTest IGNORE edilir
+    TestNG de tum  @Test metotlar bitbirlerinden bagimsiz olarak calisirlat
+    Eger methodlari bagimli hale getirmek istersem, dependsOnMethods parametresi kullanilir
+    Burdaki ornekde, searchTest methodu homeTest methoduna bagimlidir
+    searchTest den once homeTest calisir
+    Eger homeTest basarili ise searchTest calisir.
+    Eget homeTest basarisiz ise, searchTest IGNORE edilir
  */
