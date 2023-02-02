@@ -6,7 +6,7 @@ import techproed.pages.BlueRentalLoginPage;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
-import java.io.IOException;
+
 public class Day24_DataProviderTest2 {
     //    DATA PRIVIDER METOTU
     @DataProvider
@@ -19,7 +19,7 @@ public class Day24_DataProviderTest2 {
         };
         return musteriBilgileri;
     }
-    //    TEST
+    //    TEST - Ornek
     @Test(dataProvider = "customerData")
     public void dataProviderTest(String email, String password){
         System.out.println("EMAIL : "+email+" | SIFRE : "+password);
@@ -29,9 +29,10 @@ public class Day24_DataProviderTest2 {
     BlueRentalHomePage blueRentalHomePage;
     BlueRentalLoginPage blueRentalLoginPage;
     @Test(dataProvider = "customerData")
-    public void dataProviderLoginTest(String email, String sifre) throws IOException {
+    public void dataProviderLoginTest(String email, String sifre) {
         //        Sayfaya git
         Driver.getDriver().get(ConfigReader.getProperty("app_url"));//HOME SAYFASINA
+
         blueRentalHomePage= new BlueRentalHomePage();
         blueRentalLoginPage = new BlueRentalLoginPage();
         blueRentalHomePage.loginLink.click();

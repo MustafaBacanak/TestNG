@@ -1,4 +1,4 @@
-package techproed.tests.smoketest;
+package techproed.tests.smoketests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -42,5 +42,6 @@ public class Day22_NegativeLoginTest {
         Thread.sleep(2000);
         Assert.assertEquals(blueRentalLoginPage.error_message_1.getText(),"User with email fake@bluerentalcars.com not found");
 
+        Driver.closeDriver();
     }
 }

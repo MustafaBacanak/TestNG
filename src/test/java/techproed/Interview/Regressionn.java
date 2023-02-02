@@ -3,6 +3,7 @@ package techproed.Interview;
 public class Regressionn {
 
 /*
+
         * * REGRESSION TEST * *
 
     Regression Test Nedir? : Tum ana, major, onemli fonksiyonların test edildiği testlerdir
@@ -20,7 +21,8 @@ public class Regressionn {
     Regression suite de kac test case iniz var
     400 den fazla test case var
     Tum regression test caseleriniz automate edilmismidir? Manual de varmidir?
-    Takim olarak hedefimiz tum regression test caselerinin automate edilmesidir. Fakat, bu çok mumkul olmuyor. Genelde yuzde 80 den fazla oranda automate ediyoruz
+    Takim olarak hedefimiz tum regression test caselerinin automate edilmesidir. Fakat, bu çok mumkul olmuyor.
+    Genelde yuzde 80 den fazla oranda automate ediyoruz.
     Hangi testlerin regregression test e eklenecegine Kim karar verir?
     Test Lead. Sr. Automation Testers. QA.  En kidemli tester.
     Otomate edilemeyen bir durum betirmisiniz?
@@ -31,4 +33,5 @@ public class Regressionn {
     Dolayisiyla bu grubu durumlarda biz automate edemiyoruz
 
 */
+
 }

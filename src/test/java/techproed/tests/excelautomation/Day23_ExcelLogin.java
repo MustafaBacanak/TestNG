@@ -80,7 +80,7 @@
        }
 
        @Test
-       public void customerLogin() throws IOException {
+       public void customerLogin() {
 
            String path="./src/test/java/resources/mysmoketestdata.xlsx";
 //        ./ ONCEKI TUM DOSYALARI ICER. RELATIVE PATH.

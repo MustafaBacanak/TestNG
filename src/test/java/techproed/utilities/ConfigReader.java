@@ -6,7 +6,8 @@ public class ConfigReader {
 //    Bu sinif configuration.properties file i okumak icin kullanilir
 //    property file i okumak icin properti objecsi kullanilir
     private static Properties properties;
-    //    static block : ilk calisir
+
+//    static block : ilk calisir
     static {
 //        data cekmek istedigim dosyaninin path i
         String path="configuration.properties";

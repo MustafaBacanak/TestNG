@@ -12,8 +12,7 @@ public class Day21_TestCenter {
     TestCenterLoginPage testCenterLoginPage = new TestCenterLoginPage();
     TestCenterSecurePage testCenterSecurePage = new TestCenterSecurePage();
 
-
-    @Test
+    @Test(groups = "regression-tests")
     public void setTestCenterTest() {
         Driver.getDriver().get(ConfigReader.getProperty("techpro_test_url"));
 
@@ -30,3 +29,6 @@ public class Day21_TestCenter {
         Driver.closeDriver();
     }
 }
+
+
+

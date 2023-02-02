@@ -25,12 +25,10 @@ public class Day21_OpenSourceLogin {
         // Objeyi kullanarak login butonuna tıkla
         openSourcePage.loginBtn.click();
 
-        // Assert
 
+        // Assert
         OpenSourceDashboardPage openSourceDashboardPage = new OpenSourceDashboardPage();
         Assert.assertTrue(openSourceDashboardPage.dashboardHeader.isDisplayed());
-
-
 
     }
 }

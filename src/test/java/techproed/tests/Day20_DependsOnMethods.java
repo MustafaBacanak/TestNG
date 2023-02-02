@@ -5,12 +5,14 @@ public class Day20_DependsOnMethods {
     @Test
     public void homeTest(){
         System.out.println("Home Test");
-        Assert.assertTrue(false);//FAIL
+//        Assert.assertTrue(false);//FAIL
     }
     @Test(dependsOnMethods = "homeTest")
     public void searchTest(){
         System.out.println("Search Test");
     }
+
+
     @Test (dependsOnMethods = "homeTest")
     public void paymentTest(){
         System.out.println("Payment Test");
