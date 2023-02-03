@@ -34,7 +34,7 @@ public class Day24_DataProviderTest1 {
         return urunListesi;
     }
     //    TEST METOTU
-    @Test(dataProvider = "urunler")
+    @Test(dataProvider = "smoke_test_data")
     public void aramaTesti(String data){
         System.out.println(data);
     }
