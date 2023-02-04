@@ -17,8 +17,9 @@ import static org.testng.AssertJUnit.assertFalse;
 import static org.testng.AssertJUnit.assertTrue;
 public class ReusableMethods {
     public static String getScreenshot(String name)  {
+
         // naming the screenshot with the current date to avoid duplication
-        String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+        String date = new SimpleDateFormat("yyyy.MM.dd.hh.mm.ss").format(new Date());
         // TakesScreenshot is an interface of selenium that takes the screenshot
         TakesScreenshot ts = (TakesScreenshot) Driver.getDriver();
         File source = ts.getScreenshotAs(OutputType.FILE);
